@@ -18,6 +18,20 @@
     .head2-options p{
     color: #c75143	!important;
    }
+   .hph-txt h2::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    border-bottom: none !important;
+}
+   .product-discount {
+    position: absolute;
+    padding-left: 1%;
+    padding-top: 1%;
+}
    .categories ul{
     background-color: #f8f8f8;
 
@@ -40,20 +54,12 @@
      flex-wrap: wrap;
      text-align: center;
   }
-  .ban-img{
-   display: block;
-   width: 100%;
-   height: 30rem;
-   object-fit: cover;
-
-  }
    .new-cake-title{
     text-align: center;
     color:red;
  }
- .new-cakes , #cakes-banner, .cards-grid{
+ .new-cakes , #cakes-banner{
     width: 24.2%;
-    margin-bottom: 2%;
     /*margin-left: 1%;
    margin-right: 0;*/
  border: 1px solid #F5DEB3	;
@@ -79,7 +85,6 @@
   width: 100%;
   margin: 0 auto 1em auto;
   display: block;
-  /*height: auto;*/
   height: auto;
  }
  #new-sec1{
@@ -104,21 +109,26 @@
  #cakes-banner{
     border: none !important;
     box-shadow: none !important;
-  /*position: relative;*/
+position: relative;
  }
  #cakes-banner .ban-img {
-   /* height: 430px !important;
-   width: 100% !important;*/
+    /*height: 438px !important;*/
+    /*height: 88%;*/
+   width: 100% !important;
+   height: 100%;
  }
  .more-products{
     color:#ef4b4b;
     /*background-color: rgba(242, 227, 201, 0.8);*/
     background-color: rgb(242, 227, 201);
-    /*position: absolute;*/
-    bottom: 0.2em;
+    position: absolute;
+    bottom: 0.019em;
     padding: 0.6em 0;
     width: 100%;
     height: 57px;
+ }
+ #cakes-banner{
+   height: auto;
  }
  .more-products span{
     padding-bottom: 2%;
@@ -147,6 +157,9 @@
     align-items: center;
     display: flex;
     font-size: 13px;
+}
+.new-cakes ,#cakes-banner{
+   margin-bottom: 2%;
 }
 .msz-del{
     color:#9c3092;
@@ -386,7 +399,7 @@
 </div>
 <div class="msz-del">
 Earlist Delivery:
-<i>24-Mar</i>
+24-Mar
 </div>
 <div class="prd-price-box flex">
 <div class="price-tag">
@@ -414,7 +427,7 @@ Earlist Delivery:
 </div>
 <div class="msz-del">
 Earlist Delivery:
-<i>24-Mar</i>
+24-Mar
 </div>
 <div class="prd-price-box flex">
 <div class="price-tag">
@@ -442,7 +455,7 @@ Earlist Delivery:
 </div>
 <div class="msz-del">
 Earlist Delivery:
-<i>24-Mar</i>
+24-Mar
 </div>
 <div class="prd-price-box flex">
 <div class="price-tag">
@@ -466,14 +479,6 @@ Earlist Delivery:
 <span>More Products</span>
 </div>
 </div>
- <!--<div class="cards-grid">
-   <div class="card">
-      <div class="img-box">
-         <img src="https://www.expressgiftbasketsusa.com/media/group-banner01.webp" alt=""/>
-      </div>
-      <h1 class="card-heading">see more</h1>
-   </div>
- </div>-->
 <!--<div class="cake-delivery" id="new-sec1">-->
    <div class="new-cakes" id="new-cake">
    <div class="product-discount">
@@ -485,7 +490,7 @@ Earlist Delivery:
    </div>
    <div class="msz-del">
    Earlist Delivery:
-   <i>24-Mar</i>
+   24-Mar
    </div>
    <div class="prd-price-box flex">
    <div class="price-tag">
@@ -513,7 +518,7 @@ Earlist Delivery:
    </div>
    <div class="msz-del">
    Earlist Delivery:
-   <i>24-Mar</i>
+   24-Mar
    </div>
    <div class="prd-price-box flex">
    <div class="price-tag">
@@ -541,7 +546,7 @@ Earlist Delivery:
    </div>
    <div class="msz-del">
    Earlist Delivery:
-   <i>24-Mar</i>
+   24-Mar
    </div>
    <div class="prd-price-box flex">
    <div class="price-tag">
@@ -569,7 +574,7 @@ Earlist Delivery:
    </div>
    <div class="msz-del">
    Earlist Delivery:
-   <i>24-Mar</i>
+   24-Mar
    </div>
    <div class="prd-price-box flex">
    <div class="price-tag">
@@ -588,8 +593,8 @@ Earlist Delivery:
    </div>
    <!--</div>-->
    </div>
+   
 </div>
-
 
 
 <div class="hp-heading flex">
@@ -609,7 +614,7 @@ Earlist Delivery:
 </div>
 <div class="msz-del">
 Earlist Delivery:
-<i>24-Mar</i>
+24-Mar
 </div>
 <div class="prd-price-box flex">
 <div class="price-tag">
@@ -637,7 +642,7 @@ Earlist Delivery:
 </div>
 <div class="msz-del">
 Earlist Delivery:
-<i>24-Mar</i>
+24-Mar
 </div>
 <div class="prd-price-box flex">
 <div class="price-tag">
@@ -665,7 +670,7 @@ Earlist Delivery:
 </div>
 <div class="msz-del">
 Earlist Delivery:
-<i>24-Mar</i>
+24-Mar
 </div>
 <div class="prd-price-box flex">
 <div class="price-tag">
@@ -689,121 +694,122 @@ Earlist Delivery:
 <span>More Products</span>
 </div>
 </div>
+<!--<div class="cake-delivery" id="new-sec1">-->
+   <div class="new-cakes" id="new-cake">
+   <div class="product-discount">
+   <p>20% OFF</p>
+   </div>
+   <img src="https://www.expressgiftbasketsusa.com/images/GBUS450.webp" alt="" width="500" height="500" />
+   <div class="new-cakes-desc">
+   <p>Basket of Delight</p>
+   </div>
+   <div class="msz-del">
+   Earlist Delivery:
+   24-Mar
+   </div>
+   <div class="prd-price-box flex">
+   <div class="price-tag">
+   <div class="home-price"> <div>71.9</div></div>
+   </div>
+   <div class="price-select select ">
+   <select name="arid0" id="arid0" onchange="cconverter('0')">
+   <option value="21">USD</option>
+   <option value="22" selected="selected">EURO</option>
+   <option value="23">GBP</option>
+   </select>
+   </div>
+   </div>
+   <div class="btn-section">
+   <a href="#">ADD TO CART</a>
+   </div>
+   </div>
+   <div class="new-cakes">
+   <div class="product-discount">
+   <p>20% OFF</p>
+   </div>
+   <img src="https://www.expressgiftbasketsusa.com/images/GBUS450.webp" alt="" width="500" height="500" />
+   <div class="new-cakes-desc">
+   <p>Basket of Delight</p>
+   </div>
+   <div class="msz-del">
+   Earlist Delivery:
+   24-Mar
+   </div>
+   <div class="prd-price-box flex">
+   <div class="price-tag">
+   <div class="home-price"> <div>71.9</div></div>
+   </div>
+   <div class="price-select select ">
+   <select name="arid0" id="arid0" onchange="cconverter('0')">
+   <option value="21">USD</option>
+   <option value="22" selected="selected">EURO</option>
+   <option value="23">GBP</option>
+   </select>
+   </div>
+   </div>
+   <div class="btn-section">
+   <a href="#">ADD TO CART</a>
+   </div>
+   </div>
+   <div class="new-cakes">
+   <div class="product-discount">
+    <p>20% OFF</p>
+   </div>
+   <img src="https://www.expressgiftbasketsusa.com/images/GBUS450.webp" alt="" width="500" height="500" />
+   <div class="new-cakes-desc">
+   <p>Basket of Delight</p>
+   </div>
+   <div class="msz-del">
+   Earlist Delivery:
+   24-Mar
+   </div>
+   <div class="prd-price-box flex">
+   <div class="price-tag">
+   <div class="home-price"> <div>71.9</div></div>
+   </div>
+   <div class="price-select select ">
+   <select name="arid0" id="arid0" onchange="cconverter('0')">
+   <option value="21">USD</option>
+   <option value="22" selected="selected">EURO</option>
+   <option value="23">GBP</option>
+   </select>
+   </div>
+   </div>
+   <div class="btn-section">
+   <a href="#">ADD TO CART</a>
+   </div>
+   </div>
+   <div class="new-cakes">
+   <div class="product-discount">
+   <p>20% OFF</p>
+   </div>
+   <img src="https://www.expressgiftbasketsusa.com/images/GBUS450.webp" alt="" width="500" height="500" />
+   <div class="new-cakes-desc">
+   <p>Basket of Delight</p>
+   </div>
+   <div class="msz-del">
+   Earlist Delivery:
+   24-Mar
+   </div>
+   <div class="prd-price-box flex">
+   <div class="price-tag">
+   <div class="home-price"> <div>71.9</div></div>
+   </div>
+   <div class="price-select select ">
+   <select name="arid0" id="arid0" onchange="cconverter('0')">
+   <option value="21">USD</option>
+   <option value="22" selected="selected">EURO</option>
+   <option value="23">GBP</option>
+   </select>
+   </div>
+   </div>
+   <div class="btn-section">
+   <a href="#">ADD TO CART</a>
+   </div>
+   </div>
+  <!----</div>-->
 </div>
-<div class="cake-delivery" id="new-sec1">
-<div class="new-cakes" id="new-cake">
-<div class="product-discount">
-<p>20% OFF</p>
-</div>
-<img src="https://www.expressgiftbasketsusa.com/images/GBUS450.webp" alt="" width="500" height="500" />
-<div class="new-cakes-desc">
-<p>Basket of Delight</p>
-</div>
-<div class="msz-del">
-Earlist Delivery:
-<i>24-Mar</i>
-</div>
-<div class="prd-price-box flex">
-<div class="price-tag">
-<div class="home-price"> <div>71.9</div></div>
-</div>
-<div class="price-select select ">
-<select name="arid0" id="arid0" onchange="cconverter('0')">
-<option value="21">USD</option>
-<option value="22" selected="selected">EURO</option>
-<option value="23">GBP</option>
-</select>
-</div>
-</div>
-<div class="btn-section">
-<a href="#">ADD TO CART</a>
-</div>
-</div>
-<div class="new-cakes">
-<div class="product-discount">
-<p>20% OFF</p>
-</div>
-<img src="https://www.expressgiftbasketsusa.com/images/GBUS450.webp" alt="" width="500" height="500" />
-<div class="new-cakes-desc">
-<p>Basket of Delight</p>
-</div>
-<div class="msz-del">
-Earlist Delivery:
-<i>24-Mar</i>
-</div>
-<div class="prd-price-box flex">
-<div class="price-tag">
-<div class="home-price"> <div>71.9</div></div>
-</div>
-<div class="price-select select ">
-<select name="arid0" id="arid0" onchange="cconverter('0')">
-<option value="21">USD</option>
-<option value="22" selected="selected">EURO</option>
-<option value="23">GBP</option>
-</select>
-</div>
-</div>
-<div class="btn-section">
-<a href="#">ADD TO CART</a>
-</div>
-</div>
-<div class="new-cakes">
-<div class="product-discount">
- <p>20% OFF</p>
-</div>
-<img src="https://www.expressgiftbasketsusa.com/images/GBUS450.webp" alt="" width="500" height="500" />
-<div class="new-cakes-desc">
-<p>Basket of Delight</p>
-</div>
-<div class="msz-del">
-Earlist Delivery:
-<i>24-Mar</i>
-</div>
-<div class="prd-price-box flex">
-<div class="price-tag">
-<div class="home-price"> <div>71.9</div></div>
-</div>
-<div class="price-select select ">
-<select name="arid0" id="arid0" onchange="cconverter('0')">
-<option value="21">USD</option>
-<option value="22" selected="selected">EURO</option>
-<option value="23">GBP</option>
-</select>
-</div>
-</div>
-<div class="btn-section">
-<a href="#">ADD TO CART</a>
-</div>
-</div>
-<div class="new-cakes">
-<div class="product-discount">
-<p>20% OFF</p>
-</div>
-<img src="https://www.expressgiftbasketsusa.com/images/GBUS450.webp" alt="" width="500" height="500" />
-<div class="new-cakes-desc">
-<p>Basket of Delight</p>
-</div>
-<div class="msz-del">
-Earlist Delivery:
-<i>24-Mar</i>
-</div>
-<div class="prd-price-box flex">
-<div class="price-tag">
-<div class="home-price"> <div>71.9</div></div>
-</div>
-<div class="price-select select ">
-<select name="arid0" id="arid0" onchange="cconverter('0')">
-<option value="21">USD</option>
-<option value="22" selected="selected">EURO</option>
-<option value="23">GBP</option>
-</select>
-</div>
-</div>
-<div class="btn-section">
-<a href="#">ADD TO CART</a>
-</div>
-</div>
-</div>
+
 
 
 <div class="hp-heading flex">
@@ -823,7 +829,7 @@ Earlist Delivery:
 </div>
 <div class="msz-del">
 Earlist Delivery:
-<i>24-Mar</i>
+24-Mar
 </div>
 <div class="prd-price-box flex">
 <div class="price-tag">
@@ -851,7 +857,7 @@ Earlist Delivery:
 </div>
 <div class="msz-del">
 Earlist Delivery:
-<i>24-Mar</i>
+24-Mar
 </div>
 <div class="prd-price-box flex">
 <div class="price-tag">
@@ -879,7 +885,7 @@ Earlist Delivery:
 </div>
 <div class="msz-del">
 Earlist Delivery:
-<i>24-Mar</i>
+24-Mar
 </div>
 <div class="prd-price-box flex">
 <div class="price-tag">
@@ -903,121 +909,122 @@ Earlist Delivery:
 <span>More Products</span>
 </div>
 </div>
-</div>
-<div class="cake-delivery" id="new-sec1">
-<div class="new-cakes" id="new-cake">
-<div class="product-discount">
-<p>20% OFF</p>
-</div>
-<img src="https://www.expressgiftbasketsusa.com/images/GBUS506.webp" alt="" width="500" height="500" />
-<div class="new-cakes-desc">
-<p>Basket of Delight</p>
-</div>
-<div class="msz-del">
-Earlist Delivery:
-<i>24-Mar</i>
-</div>
-<div class="prd-price-box flex">
-<div class="price-tag">
-<div class="home-price"> <div>71.9</div></div>
-</div>
-<div class="price-select select ">
-<select name="arid0" id="arid0" onchange="cconverter('0')">
-<option value="21">USD</option>
-<option value="22" selected="selected">EURO</option>
-<option value="23">GBP</option>
-</select>
-</div>
-</div>
-
-<div class="btn-section">
-<a href="#">ADD TO CART</a>
-</div>
-</div>
-<div class="new-cakes">
-<div class="product-discount">
-<p>20% OFF</p>
-</div>
-<img src="https://www.expressgiftbasketsusa.com/images/GBUS506.webp" alt="" width="500" height="500" />
-<div class="new-cakes-desc">
-<p>Basket of Delight</p>
-</div>
-<div class="msz-del">
-Earlist Delivery:
-<i>24-Mar</i>
-</div>
-<div class="prd-price-box flex">
-<div class="price-tag">
-<div class="home-price"> <div>71.9</div></div>
-</div>
-<div class="price-select select ">
-<select name="arid0" id="arid0" onchange="cconverter('0')">
-<option value="21">USD</option>
-<option value="22" selected="selected">EURO</option>
-<option value="23">GBP</option>
-</select>
-</div>
-</div>
-<div class="btn-section">
-<a href="#">ADD TO CART</a>
-</div>
-</div>
-<div class="new-cakes">
-<div class="product-discount">
-<p>20% OFF</p>
-</div>
-<img src="https://www.expressgiftbasketsusa.com/images/GBUS506.webp" alt="" width="500" height="500" />
-<div class="new-cakes-desc">
-<p>Basket of Delight</p>
-</div>
-<div class="msz-del">
-Earlist Delivery:
-<i>24-Mar</i>
-</div>
-<div class="prd-price-box flex">
-<div class="price-tag">
-<div class="home-price"> <div>71.9</div></div>
-</div>
-<div class="price-select select ">
-<select name="arid0" id="arid0" onchange="cconverter('0')">
-<option value="21">USD</option>
-<option value="22" selected="selected">EURO</option>
-<option value="23">GBP</option>
-</select>
-</div>
-</div>
-<div class="btn-section">
-<a href="#">ADD TO CART</a>
-</div>
-</div>
-<div class="new-cakes">
-<div class="product-discount">
-<p>20% OFF</p>
-</div>
-<img src="https://www.expressgiftbasketsusa.com/images/GBUS506.webp" alt="" width="500" height="500" />
-<div class="new-cakes-desc">
-<p>Basket of Delight</p>
-</div>
-<div class="msz-del">
-Earlist Delivery:
-<i>24-Mar</i>
-</div>
-<div class="prd-price-box flex">
-<div class="price-tag">
-<div class="home-price"> <div>71.9</div></div>
-</div>
-<div class="price-select select ">
-<select name="arid0" id="arid0" onchange="cconverter('0')">
-<option value="21">USD</option>
-<option value="22" selected="selected">EURO</option>
-<option value="23">GBP</option>
-</select>
-</div>
-</div>
-<div class="btn-section">
-<a href="#">ADD TO CART</a>
-</div>
-</div>
+<!--<div class="cake-delivery" id="new-sec1">-->
+   <div class="new-cakes" id="new-cake">
+   <div class="product-discount">
+   <p>20% OFF</p>
+   </div>
+   <img src="https://www.expressgiftbasketsusa.com/images/GBUS506.webp" alt="" width="500" height="500" />
+   <div class="new-cakes-desc">
+   <p>Basket of Delight</p>
+   </div>
+   <div class="msz-del">
+   Earlist Delivery:
+   24-Mar
+   </div>
+   <div class="prd-price-box flex">
+   <div class="price-tag">
+   <div class="home-price"> <div>71.9</div></div>
+   </div>
+   <div class="price-select select ">
+   <select name="arid0" id="arid0" onchange="cconverter('0')">
+   <option value="21">USD</option>
+   <option value="22" selected="selected">EURO</option>
+   <option value="23">GBP</option>
+   </select>
+   </div>
+   </div>
+   
+   <div class="btn-section">
+   <a href="#">ADD TO CART</a>
+   </div>
+   </div>
+   <div class="new-cakes">
+   <div class="product-discount">
+   <p>20% OFF</p>
+   </div>
+   <img src="https://www.expressgiftbasketsusa.com/images/GBUS506.webp" alt="" width="500" height="500" />
+   <div class="new-cakes-desc">
+   <p>Basket of Delight</p>
+   </div>
+   <div class="msz-del">
+   Earlist Delivery:
+   24-Mar
+   </div>
+   <div class="prd-price-box flex">
+   <div class="price-tag">
+   <div class="home-price"> <div>71.9</div></div>
+   </div>
+   <div class="price-select select ">
+   <select name="arid0" id="arid0" onchange="cconverter('0')">
+   <option value="21">USD</option>
+   <option value="22" selected="selected">EURO</option>
+   <option value="23">GBP</option>
+   </select>
+   </div>
+   </div>
+   <div class="btn-section">
+   <a href="#">ADD TO CART</a>
+   </div>
+   </div>
+   <div class="new-cakes">
+   <div class="product-discount">
+   <p>20% OFF</p>
+   </div>
+   <img src="https://www.expressgiftbasketsusa.com/images/GBUS506.webp" alt="" width="500" height="500" />
+   <div class="new-cakes-desc">
+   <p>Basket of Delight</p>
+   </div>
+   <div class="msz-del">
+   Earlist Delivery:
+   24-Mar
+   </div>
+   <div class="prd-price-box flex">
+   <div class="price-tag">
+   <div class="home-price"> <div>71.9</div></div>
+   </div>
+   <div class="price-select select ">
+   <select name="arid0" id="arid0" onchange="cconverter('0')">
+   <option value="21">USD</option>
+   <option value="22" selected="selected">EURO</option>
+   <option value="23">GBP</option>
+   </select>
+   </div>
+   </div>
+   <div class="btn-section">
+   <a href="#">ADD TO CART</a>
+   </div>
+   </div>
+   <div class="new-cakes">
+   <div class="product-discount">
+   <p>20% OFF</p>
+   </div>
+   <img src="https://www.expressgiftbasketsusa.com/images/GBUS506.webp" alt="" width="500" height="500" />
+   <div class="new-cakes-desc">
+   <p>Basket of Delight</p>
+   </div>
+   <div class="msz-del">
+   Earlist Delivery:
+   24-Mar
+   </div>
+   <div class="prd-price-box flex">
+   <div class="price-tag">
+   <div class="home-price"> <div>71.9</div></div>
+   </div>
+   <div class="price-select select ">
+   <select name="arid0" id="arid0" onchange="cconverter('0')">
+   <option value="21">USD</option>
+   <option value="22" selected="selected">EURO</option>
+   <option value="23">GBP</option>
+   </select>
+   </div>
+   </div>
+   <div class="btn-section">
+   <a href="#">ADD TO CART</a>
+   </div>
+   </div>
+   <!--</div>-->
+   
 </div>
 
 
@@ -1038,7 +1045,7 @@ Earlist Delivery:
 </div>
 <div class="msz-del">
 Earlist Delivery:
-<i>24-Mar</i>
+24-Mar
 </div>
 <div class="prd-price-box flex">
 <div class="price-tag">
@@ -1066,7 +1073,7 @@ Earlist Delivery:
 </div>
 <div class="msz-del">
 Earlist Delivery:
-<i>24-Mar</i>
+24-Mar
 </div>
 <div class="prd-price-box flex">
 <div class="price-tag">
@@ -1094,7 +1101,7 @@ Earlist Delivery:
 </div>
 <div class="msz-del">
 Earlist Delivery:
-<i>24-Mar</i>
+24-Mar
 </div>
 <div class="prd-price-box flex">
 <div class="price-tag">
@@ -1118,122 +1125,123 @@ Earlist Delivery:
 <span>More Products</span>
 </div>
 </div>
-</div>
-<div class="cake-delivery" id="new-sec1">
-<div class="new-cakes" id="new-cake">
-<div class="product-discount">
-<p>20% OFF</p>
-</div>
-<img src="https://www.expressgiftbasketsusa.com/images/9720.webp" alt="" width="500" height="500" />
-<div class="new-cakes-desc">
-<p>Basket of Delight</p>
-</div>
-<div class="msz-del">
-Earlist Delivery:
-<i>24-Mar</i>
-</div>
-<div class="prd-price-box flex">
-<div class="price-tag">
-<div class="home-price"> <div>71.9</div></div>
-</div>
-<div class="price-select select ">
-<select name="arid0" id="arid0" onchange="cconverter('0')">
-<option value="21">USD</option>
-<option value="22" selected="selected">EURO</option>
-<option value="23">GBP</option>
-</select>
-</div>
-</div>
-<div class="btn-section">
-<a href="#">ADD TO CART</a>
-</div>
-</div>
-<div class="new-cakes">
-<div class="product-discount">
-<p>20% OFF</p>
-</div>
-<img src="https://www.expressgiftbasketsusa.com/images/9720.webp" alt="" width="500" height="500" />
-<div class="new-cakes-desc">
-<p>Basket of Delight</p>
-</div>
-<div class="msz-del">
-Earlist Delivery:
-<i>24-Mar</i>
-</div>
-<div class="prd-price-box flex">
-<div class="price-tag">
-<div class="home-price"> <div>71.9</div></div>
-</div>
-<div class="price-select select ">
-<select name="arid0" id="arid0" onchange="cconverter('0')">
-<option value="21">USD</option>
-<option value="22" selected="selected">EURO</option>
-<option value="23">GBP</option>
-</select>
-</div>
-</div>
-<div class="btn-section">
-<a href="#">ADD TO CART</a>
-</div>
-</div>
-<div class="new-cakes">
-<div class="product-discount">
-<p>20% OFF</p>
-</div>
-<img src="https://www.expressgiftbasketsusa.com/images/9720.webp" alt="" width="500" height="500" />
-<div class="new-cakes-desc">
-<p>Basket of Delight</p>
-</div>
-<div class="msz-del">
-Earlist Delivery:
-<i>24-Mar</i>
-</div>
-<div class="prd-price-box flex">
-<div class="price-tag">
-<div class="home-price"> <div>71.9</div></div>
-</div>
-<div class="price-select select ">
-<select name="arid0" id="arid0" onchange="cconverter('0')">
-<option value="21">USD</option>
-<option value="22" selected="selected">EURO</option>
-<option value="23">GBP</option>
-</select>
-</div>
-</div>
-<div class="btn-section">
-<a href="#">ADD TO CART</a>
-</div>
-</div>
-<div class="new-cakes">
-<div class="product-discount">
-<p>20% OFF</p>
-</div>
-<img src="https://www.expressgiftbasketsusa.com/images/9720.webp" alt="" width="500" height="500" />
-<div class="new-cakes-desc">
-<p>Basket of Delight</p>
-</div>
-<div class="msz-del">
-Earlist Delivery:
-<i>24-Mar</i>
-</div>
-<div class="prd-price-box flex">
-<div class="price-tag">
-<div class="home-price"> <div>71.9</div></div>
-</div>
-<div class="price-select select ">
-<select name="arid0" id="arid0" onchange="cconverter('0')">
-<option value="21">USD</option>
-<option value="22" selected="selected">EURO</option>
-<option value="23">GBP</option>
-</select>
-</div>
-</div>
-<div class="btn-section">
-<a href="#">ADD TO CART</a>
-</div>
-</div>
+<!--<div class="cake-delivery" id="new-sec1">-->
+   <div class="new-cakes" id="new-cake">
+   <div class="product-discount">
+   <p>20% OFF</p>
+   </div>
+   <img src="https://www.expressgiftbasketsusa.com/images/9720.webp" alt="" width="500" height="500" />
+   <div class="new-cakes-desc">
+   <p>Basket of Delight</p>
+   </div>
+   <div class="msz-del">
+   Earlist Delivery:
+   24-Mar
+   </div>
+   <div class="prd-price-box flex">
+   <div class="price-tag">
+   <div class="home-price"> <div>71.9</div></div>
+   </div>
+   <div class="price-select select ">
+   <select name="arid0" id="arid0" onchange="cconverter('0')">
+   <option value="21">USD</option>
+   <option value="22" selected="selected">EURO</option>
+   <option value="23">GBP</option>
+   </select>
+   </div>
+   </div>
+   <div class="btn-section">
+   <a href="#">ADD TO CART</a>
+   </div>
+   </div>
+   <div class="new-cakes">
+   <div class="product-discount">
+   <p>20% OFF</p>
+   </div>
+   <img src="https://www.expressgiftbasketsusa.com/images/9720.webp" alt="" width="500" height="500" />
+   <div class="new-cakes-desc">
+   <p>Basket of Delight</p>
+   </div>
+   <div class="msz-del">
+   Earlist Delivery:
+   24-Mar
+   </div>
+   <div class="prd-price-box flex">
+   <div class="price-tag">
+      <div class="home-price"> <div>71.9</div></div>
+      </div>
+      <div class="price-select select ">
+      <select name="arid0" id="arid0" onchange="cconverter('0')">
+      <option value="21">USD</option>
+      <option value="22" selected="selected">EURO</option>
+      <option value="23">GBP</option>
+      </select>
+      </div>
+      </div>
+      <div class="btn-section">
+      <a href="#">ADD TO CART</a>
+      </div>
+      </div>
+      <div class="new-cakes">
+      <div class="product-discount">
+      <p>20% OFF</p>
+      </div>
+      <img src="https://www.expressgiftbasketsusa.com/images/9720.webp" alt="" width="500" height="500" />
+      <div class="new-cakes-desc">
+      <p>Basket of Delight</p>
+      </div>
+      <div class="msz-del">
+      Earlist Delivery:
+      24-Mar
+      </div>
+      <div class="prd-price-box flex">
+      <div class="price-tag">
+      <div class="home-price"> <div>71.9</div></div>
+      </div>
+      <div class="price-select select ">
+      <select name="arid0" id="arid0" onchange="cconverter('0')">
+      <option value="21">USD</option>
+      <option value="22" selected="selected">EURO</option>
+      <option value="23">GBP</option>
+      </select>
+      </div>
+      </div>
+      <div class="btn-section">
+      <a href="#">ADD TO CART</a>
+      </div>
+      </div>
+      <div class="new-cakes">
+      <div class="product-discount">
+      <p>20% OFF</p>
+      </div>
+      <img src="https://www.expressgiftbasketsusa.com/images/9720.webp" alt="" width="500" height="500" />
+      <div class="new-cakes-desc">
+      <p>Basket of Delight</p>
+      </div>
+      <div class="msz-del">
+      Earlist Delivery:
+      24-Mar
+      </div>
+      <div class="prd-price-box flex">
+      <div class="price-tag">
+      <div class="home-price"> <div>71.9</div></div>
+      </div>
+      <div class="price-select select ">
+      <select name="arid0" id="arid0" onchange="cconverter('0')">
+      <option value="21">USD</option>
+      <option value="22" selected="selected">EURO</option>
+      <option value="23">GBP</option>
+      </select>
+      </div>
+      </div>
+      <div class="btn-section">
+      <a href="#">ADD TO CART</a>
+      </div>
+      <!--</div>-->
+      </div>
 </div>
 
+   
 </div>
 <script language="javascript">
 function cconverter(nn)
@@ -1576,95 +1584,107 @@ function cconverter(nn)
   gtag('config', 'AW-1052756278');
 </script>
 <style>
-    @media only screen and (min-width: 300px) and (max-width:480px){
-    /* .cake-delivery-container{
-       width: 100%;
-       flex-direction: column;
-       
-     }*/
-     .new-cakes ,#cakes-banner{
-       width: 48%;
-     }
-     #cakes-banner{
-      /*height: 300px;*/
-     }
-     #cakes-banner .ban-img{
-      height: 314px !important;
-      width: 100% !important;
-     }
-     
-     .more-products{
-      position: absolute;
-      bottom: -0.1rem !important;
-      height: 57px !important;
-     }
-     .more-products span{
-      font-size: 147%;
-     }
-     #btn-section{
-      margin-top: 17%;
-     }
-     
-     
+   @media only screen and (min-width: 300px) and (max-width:480px){
+   /* .cake-delivery-container{
+      width: 100%;
+      flex-direction: column;
+      
+    }*/
+    .new-cakes ,#cakes-banner{
+      width: 48%;
     }
-    @media only screen and (max-width:427px){
-     .btn-section{
-       flex-direction: column;
-          text-align: center;
-         justify-content: center;
-         align-items: center;
-         padding-bottom: 1%;
-     }
+    #cakes-banner{
+     /*height: 300px;*/
     }
-    @media only screen and (min-width:481px) and (max-width:977px){
-     #new-cake{
-       /*display: none;*/
-     }
-     .new-cakes ,#cakes-banner{
-       width: 32%;
-     }
-     #cakes-banner .ban-img {
-      height: 320px !important;
-      width: 100% !important;
-     }
-     .more-products span {
-      font-size: 137%;
-     }
-     .new-cakes-desc p {
-      font-size: 97%;
-     }
-
-
-     .btn-section{
-       flex-direction: column;
-          text-align: center;
-         justify-content: center;
-         align-items: center;
-         padding-bottom: 1%;
-     }
- 
+    #cakes-banner .ban-img{
+     /*height: 314px !important;*/
+     width: 100% !important;
     }
-    @media only screen and (min-width:978px) and (max-width:1320px){
-      .btn-section{
-        margin-top: 13%;
-      }
+    
+    .more-products{
+     position: absolute;
+     bottom: -0.1rem !important;
+     height: 57px !important;
     }
-  @media only screen and (min-width:600px) and (max-width:977px){
+    .more-products span{
+     font-size: 147%;
+    }
+    #btn-section{
+     margin-top: 17%;
+    }
+    
+    
+   }
+   @media only screen and (max-width:427px){
+    .btn-section{
+      flex-direction: column;
+         text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 1%;
+    }
+   }
+   @media only screen and (min-width:481px) and (max-width:977px){
+    #new-cake{
+      /*display: none;*/
+    }
+    .new-cakes ,#cakes-banner{
+      width: 32%;
+    }
     #cakes-banner .ban-img {
-      height: 370px !important;
-      width: 100% !important;
-     }
-     #cakes-banner{
-      height: 410px;
-     }
-
-  }
-  @media only screen and (min-width:481px) and (max-width:537px){
-    .btn-section a{
-      font-size: 13px !important;
-      word-spacing: -2px;
+     /*height: 320px !important;*/
+     width: 100% !important;
     }
-  }
+    .more-products span {
+     font-size: 137%;
+    }
+    .new-cakes-desc p {
+     font-size: 97%;
+    }
+
+
+    .btn-section{
+      flex-direction: column;
+         text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 1%;
+    }
+
+   }
+   @media only screen and (min-width:978px) and (max-width:1320px){
+     .btn-section{
+       margin-top: 13%;
+     }
+   }
+ /*@media only screen and (min-width:600px) and (max-width:977px){
+   #cakes-banner .ban-img {
+    height: 370px !important;
+     width: 100% !important;
+    }
+    #cakes-banner{
+     height: 410px;
+    }
+
+ }*/
+ @media only screen and (min-width:481px) and (max-width:537px){
+   .btn-section a{
+     font-size: 13px !important;
+     word-spacing: -2px;
+   }
+ }
+ /*---------------new media style---------------------*/
+ @media only screen and (min-width:677px) and (max-width:977px){
+   #cakes-banner .ban-img{
+
+   }
+ }
+ /*#cakes-banner {
+            height: auto;
+            }
+            .ban-img{
+               height: 88%;
+            }*/
 </style>
 </body>
 </html>
